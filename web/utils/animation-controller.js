@@ -62,7 +62,7 @@ export class AnimationController {
      * Set playback speed
      */
     setSpeed(speed) {
-        this.speed = Math.max(0.1, Math.min(3, speed));
+        this.speed = Math.max(0.1, Math.min(10, speed));
     }
 
     /**
