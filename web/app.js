@@ -131,15 +131,16 @@ class DancingPiApp {
             this.toggleFullscreen();
         });
 
-        // Menu toggle for mobile
+        // Menu toggle - collapses sidebar
         document.getElementById('menuToggle').addEventListener('click', () => {
-            document.querySelector('.nav-sidebar').classList.toggle('open');
+            document.querySelector('.nav-sidebar').classList.toggle('collapsed');
         });
 
         // Controls toggle
         document.getElementById('controlsToggle').addEventListener('click', () => {
             const content = document.querySelector('.controls-content');
-            content.style.display = content.style.display === 'none' ? 'flex' : 'none';
+            const isHidden = content.style.display === 'none';
+            content.style.display = isHidden ? 'grid' : 'none';
         });
     }
 
