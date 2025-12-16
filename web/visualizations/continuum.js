@@ -100,7 +100,7 @@ export class ContinuumVisualization {
         return `
             <div class="control-group">
                 <label for="density">Densidade: <span id="densityValue">4000</span></label>
-                <input type="range" id="density" min="1000" max="6000" step="500" value="4000" class="slider">
+                <input type="range" id="density" min="500" max="6000" step="100" value="4000" class="slider">
             </div>
             <div class="control-group">
                 <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem;">

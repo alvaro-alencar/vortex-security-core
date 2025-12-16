@@ -136,6 +136,11 @@ class DancingPiApp {
             document.querySelector('.nav-sidebar').classList.toggle('collapsed');
         });
 
+        // Fixed sidebar toggle (always visible when collapsed)
+        document.getElementById('sidebarToggleFixed').addEventListener('click', () => {
+            document.querySelector('.nav-sidebar').classList.toggle('collapsed');
+        });
+
         // Controls toggle
         document.getElementById('controlsToggle').addEventListener('click', () => {
             const content = document.querySelector('.controls-content');

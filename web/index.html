@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dancing Pi | A Formalização Antimatemática</title>
-    <meta name="description" content="Uma jornada visual através da Tese da Tensão Fundamental - explorando a natureza da realidade através de simulações computacionais.">
-    
+    <meta name="description"
+        content="Uma jornada visual através da Tese da Tensão Fundamental - explorando a natureza da realidade através de simulações computacionais.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Landing Screen -->
     <div id="landing" class="landing active">
@@ -37,50 +42,58 @@
                     <span></span>
                 </button>
             </div>
-            
+
             <ul class="nav-menu">
                 <li><a href="#" data-chapter="euler" class="nav-link active">
-                    <span class="chapter-num">01</span>
-                    <span class="chapter-name">A Lei</span>
-                    <span class="chapter-subtitle">Dança de Euler</span>
-                </a></li>
-                
+                        <span class="chapter-num">01</span>
+                        <span class="chapter-name">A Lei</span>
+                        <span class="chapter-subtitle">Dança de Euler</span>
+                    </a></li>
+
                 <li><a href="#" data-chapter="vida-sistema" class="nav-link">
-                    <span class="chapter-num">02</span>
-                    <span class="chapter-name">A Angústia</span>
-                    <span class="chapter-subtitle">Vida vs Sistema</span>
-                </a></li>
-                
+                        <span class="chapter-num">02</span>
+                        <span class="chapter-name">A Angústia</span>
+                        <span class="chapter-subtitle">Vida vs Sistema</span>
+                    </a></li>
+
                 <li><a href="#" data-chapter="soma-sentidos" class="nav-link">
-                    <span class="chapter-num">03</span>
-                    <span class="chapter-name">A Comunidade</span>
-                    <span class="chapter-subtitle">Soma dos Sentidos</span>
-                </a></li>
-                
+                        <span class="chapter-num">03</span>
+                        <span class="chapter-name">A Comunidade</span>
+                        <span class="chapter-subtitle">Soma dos Sentidos</span>
+                    </a></li>
+
                 <li><a href="#" data-chapter="polarizacao" class="nav-link">
-                    <span class="chapter-num">04</span>
-                    <span class="chapter-name">A Alquimia</span>
-                    <span class="chapter-subtitle">Polarização</span>
-                </a></li>
-                
+                        <span class="chapter-num">04</span>
+                        <span class="chapter-name">A Alquimia</span>
+                        <span class="chapter-subtitle">Polarização</span>
+                    </a></li>
+
                 <li><a href="#" data-chapter="continuum" class="nav-link">
-                    <span class="chapter-num">05</span>
-                    <span class="chapter-name">O Espírito</span>
-                    <span class="chapter-subtitle">Continuum Infinito</span>
-                </a></li>
-                
+                        <span class="chapter-num">05</span>
+                        <span class="chapter-name">O Espírito</span>
+                        <span class="chapter-subtitle">Continuum Infinito</span>
+                    </a></li>
+
                 <li><a href="#" data-chapter="singularidade" class="nav-link">
-                    <span class="chapter-num">06</span>
-                    <span class="chapter-name">O Colapso</span>
-                    <span class="chapter-subtitle">A Singularidade</span>
-                </a></li>
+                        <span class="chapter-num">06</span>
+                        <span class="chapter-name">O Colapso</span>
+                        <span class="chapter-subtitle">A Singularidade</span>
+                    </a></li>
             </ul>
-            
+
             <div class="nav-footer">
                 <p>© 2025 Vortex Development</p>
                 <p class="nav-quote">"Nós não codamos a realidade,<br>apenas a renderizamos."</p>
             </div>
         </nav>
+
+        <!-- Fixed Sidebar Toggle (always visible) -->
+        <button id="sidebarToggleFixed" class="sidebar-toggle-fixed" aria-label="Toggle sidebar"
+            title="Expandir/Recolher Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+        </button>
 
         <!-- Main Content Area -->
         <main class="main-content">
@@ -91,14 +104,15 @@
                 </div>
                 <div class="chapter-text">
                     <h2 id="chapterTitle">A Lei: A Dança de Euler</h2>
-                    <p id="chapterDescription">A Identidade de Euler (e^(iπ) + 1 = 0). Para ir do Ser (1) ao Não-Ser (-1) sem se destruir, a realidade precisa rotacionar pelo plano imaginário.</p>
+                    <p id="chapterDescription">A Identidade de Euler (e^(iπ) + 1 = 0). Para ir do Ser (1) ao Não-Ser
+                        (-1) sem se destruir, a realidade precisa rotacionar pelo plano imaginário.</p>
                 </div>
             </div>
 
             <!-- Canvas Container -->
             <div class="canvas-container">
                 <canvas id="mainCanvas"></canvas>
-                
+
                 <!-- Overlay Info -->
                 <div class="canvas-overlay">
                     <div class="stats">
@@ -113,11 +127,11 @@
                     <h3>Controles</h3>
                     <button id="controlsToggle" class="controls-toggle">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M5 10L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M5 10L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </button>
                 </div>
-                
+
                 <div class="controls-content">
                     <!-- Animation Controls -->
                     <div class="control-group">
@@ -125,20 +139,21 @@
                         <div class="button-group">
                             <button id="playBtn" class="control-btn active">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                    <path d="M4 2L14 8L4 14V2Z"/>
+                                    <path d="M4 2L14 8L4 14V2Z" />
                                 </svg>
                                 Play
                             </button>
                             <button id="pauseBtn" class="control-btn">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                    <rect x="4" y="2" width="3" height="12"/>
-                                    <rect x="9" y="2" width="3" height="12"/>
+                                    <rect x="4" y="2" width="3" height="12" />
+                                    <rect x="9" y="2" width="3" height="12" />
                                 </svg>
                                 Pause
                             </button>
                             <button id="resetBtn" class="control-btn">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                    <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2zm0 1a5 5 0 0 1 0 10A5 5 0 0 1 8 3zm-1 2v4l3 2 1-1.5-2-1.5V5H7z"/>
+                                    <path
+                                        d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2zm0 1a5 5 0 0 1 0 10A5 5 0 0 1 8 3zm-1 2v4l3 2 1-1.5-2-1.5V5H7z" />
                                 </svg>
                                 Reset
                             </button>
@@ -159,14 +174,15 @@
                         <div class="button-group vertical">
                             <button id="screenshotBtn" class="control-btn secondary">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                    <rect x="2" y="4" width="12" height="9" rx="1" stroke="currentColor" fill="none"/>
-                                    <circle cx="8" cy="8.5" r="2"/>
+                                    <rect x="2" y="4" width="12" height="9" rx="1" stroke="currentColor" fill="none" />
+                                    <circle cx="8" cy="8.5" r="2" />
                                 </svg>
                                 Capturar Imagem
                             </button>
                             <button id="fullscreenBtn" class="control-btn secondary">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                    <path d="M2 2h4v2H4v2H2V2zm8 0h4v4h-2V4h-2V2zM2 10h2v2h2v2H2v-4zm12 0v4h-4v-2h2v-2h2z"/>
+                                    <path
+                                        d="M2 2h4v2H4v2H2V2zm8 0h4v4h-2V4h-2V2zM2 10h2v2h2v2H2v-4zm12 0v4h-4v-2h2v-2h2z" />
                                 </svg>
                                 Tela Cheia
                             </button>
@@ -180,4 +196,5 @@
     <!-- Scripts -->
     <script type="module" src="app.js"></script>
 </body>
+
 </html>

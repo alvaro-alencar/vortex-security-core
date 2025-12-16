@@ -101,7 +101,7 @@ export class PolarizacaoVisualization {
         return `
             <div class="control-group">
                 <label for="numParticles">Partículas: <span id="numParticlesValue">1000</span></label>
-                <input type="range" id="numParticles" min="500" max="2000" step="100" value="1000" class="slider">
+                <input type="range" id="numParticles" min="100" max="2000" step="50" value="1000" class="slider">
             </div>
         `;
     }

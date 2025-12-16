@@ -97,7 +97,7 @@ export class SomaSentidosVisualization {
         return `
             <div class="control-group">
                 <label for="numVidas">Número de Vetores: <span id="numVidasValue">72</span></label>
-                <input type="range" id="numVidas" min="18" max="144" step="18" value="72" class="slider">
+                <input type="range" id="numVidas" min="10" max="200" step="1" value="72" class="slider">
             </div>
         `;
     }
