@@ -1,4 +1,4 @@
-// Dancing Pi - Main Application Controller
+// Vortex Ontology - Main Application Controller
 // Manages navigation, canvas, and visualization switching
 
 import AnimationController from './utils/animation-controller.js';
@@ -241,7 +241,7 @@ class DancingPiApp {
 
     captureScreenshot() {
         const link = document.createElement('a');
-        link.download = `dancing-pi-${this.currentChapter}-${Date.now()}.png`;
+        link.download = `vortex-ontology-${this.currentChapter}-${Date.now()}.png`;
         link.href = this.canvas.toDataURL();
         link.click();
     }

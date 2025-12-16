@@ -1,4 +1,4 @@
-# 🌀 Project Dancing Pi: A Formalização Antimatemática
+# 🌀 Project Vortex Ontology: A Formalização Antimatemática
 
 > **Autor:** Dr. Álvaro Alencar (Vortex Development)
 > **Status:** Concluído / Transcendental
