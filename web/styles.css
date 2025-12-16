@@ -122,6 +122,13 @@ body {
     letter-spacing: 0.1em;
     animation: glitchAnimation 5s infinite;
     text-shadow: 0 0 40px rgba(107, 47, 181, 0.8);
+    line-height: 1.1;
+}
+
+.glitch .ontology {
+    display: block;
+    font-size: 0.85em;
+    margin-top: -0.1em;
 }
 
 @keyframes glitchAnimation {
