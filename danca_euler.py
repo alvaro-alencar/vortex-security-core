@@ -23,7 +23,7 @@ text_val = ax.text(-1.2, 1.2, '', fontsize=12)
 
 # Dados da trajetória (0 a PI)
 frames = 200
-thetas = np.linspace(0, np.pi, frames)
+thetas = np.linspace(0, 2 * np.pi, frames)
 
 def init():
     point.set_data([], [])
@@ -49,3 +49,7 @@ ani = FuncAnimation(fig, update, frames=frames, init_func=init, blit=True, inter
 
 # Essa é a linha que faz a mágica acontecer no VS Code
 plt.show()
+
+print("Gerando GIF... (Isso pode levar uns segundos)")
+ani.save('danca_euler.gif', writer='pillow', fps=30)
+print("GIF salvo com sucesso na pasta do projeto!")
